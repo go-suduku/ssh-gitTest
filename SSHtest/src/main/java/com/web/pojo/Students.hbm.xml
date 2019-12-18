@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-12-17 16:24:53 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.web.pojo.Students" table="students" catalog="test">
+        <id name="sid" type="java.lang.Integer">
+            <column name="sid" />
+            <generator class="identity" />
+        </id>
+        <property name="sname" type="string">
+            <column name="sname" length="10" />
+        </property>
+        <property name="stoday" type="timestamp">
+            <column name="stoday" length="0" />
+        </property>
+    </class>
+</hibernate-mapping>
